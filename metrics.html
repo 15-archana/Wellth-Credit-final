@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Metrics Dashboard</title>
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>    
+<body> 
+    <div class="branding d-flex align-items-center">
+
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+          <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <h1 class="sitename">WellthCredit</h1>
+          </a> 
+  
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.html#hero" class="active">Home<br></a></li>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#services">Features</a></li>
+              <li class="dropdown"><a href="#"><span>Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="users-profile.html">User profile</a></li>
+                  <li class="dropdown"><a href="#"><span>Our services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="loans.html#">Personalized Loans</a></li>
+                      <li><a href="insurance.html">Insurance Plans</a></li>
+                      <li><a href="investments.html">Investment Opportunities</a></li>
+                      <li><a href="rewards.html">Rewards and Incentives</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="metrics.html">Health Metrics</a></li>
+                </ul>
+              
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="section-title text-center" data-aos="fade-up">Health Metrics</h1>
+        <div class="row mt-4">
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="metric-box text-center" style="background-color: #3498db;">
+                    <span class="metric-icon"><i class="fas fa-walking"></i></span>
+                    <div class="metric-value">8,002</div>
+                    <div class="metric-label">steps / day</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="metric-box text-center" style="background-color: #2ecc71;">
+                    <span class="metric-icon"><i class="fas fa-burn"></i></span>
+                    <div class="metric-value">60</div>
+                    <div class="metric-label">kcal / day</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="metric-box text-center" style="background-color: #e74c3c;">
+                    <span class="metric-icon"><i class="fas fa-heartbeat"></i></span>
+                    <div class="metric-value">83</div>
+                    <div class="metric-label">Heart Rate</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="metric-box text-center" style="background-color: #f39c12;">
+                    <span class="metric-icon"><i class="fas fa-tint"></i></span>
+                    <div class="metric-value">89%</div>
+                    <div class="metric-label">Oxygen Level</div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title mt-5" data-aos="fade-up">General Report</h2>
+        <div class="general-report mt-4">
+            <div class="label">Heart Beat</div>
+            <div class="bar bar-heartbeat" data-aos="slide-right" data-aos-delay="100"></div>
+            <div class="label">Blood Pressure</div>
+            <div class="bar bar-blood-pressure" data-aos="slide-right" data-aos-delay="200"></div>
+            <div class="label">Sugar</div>
+            <div class="bar bar-sugar" data-aos="slide-right" data-aos-delay="300"></div>
+            <div class="label">Haemoglobin</div>
+            <div class="bar bar-haemoglobin" data-aos="slide-right" data-aos-delay="400"></div>
+        </div>
+
+        <div class="gauge mt-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="dial">
+                <div class="value">87.6</div>
+            </div>
+            <div class="indicator" style="transform: rotate(36deg);"></div>
+        </div>
+        
+
+        <div class="details mt-5 text-center" data-aos="fade-up" data-aos-delay="100">
+            <p>Blood Pressure: 130/90 mm Hg</p>
+            <p>Pulse: 81 beats/min</p>
+            <p>Oxygen: 93%</p>
+        </div>
+
+        <h2 class="section-title mt-5" data-aos="fade-up">Additional Metrics</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 col-sm-6 mb-4" data-aos="flip-left" data-aos-delay="100">
+                <div class="info-box text-center" style="background-color: #1abc9c;">
+                    <span class="info-icon"><i class="fas fa-running"></i></span>
+                    <h3>Physical Activity</h3>
+                    <p>80</p>
+                    <p class="info-trend down">↓</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-aos="flip-left" data-aos-delay="200">
+                <div class="info-box text-center" style="background-color: #8e44ad;">
+                    <span class="info-icon"><i class="fas fa-apple-alt"></i></span>
+                    <h3>Diet and Nutrition</h3>
+                    <p>70</p>
+                    <p class="info-trend up">↑</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-aos="flip-left" data-aos-delay="300">
+                <div class="info-box text-center" style="background-color: #e67e22;">
+                    <span class="info-icon"><i class="fas fa-bed"></i></span>
+                    <h3>Sleep Quality</h3>
+                    <p>75</p>
+                    <p class="info-trend up">↑</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-aos="flip-left" data-aos-delay="400">
+                <div class="info-box text-center" style="background-color: #c0392b;">
+                    <span class="info-icon"><i class="fas fa-notes-medical"></i></span>
+                    <h3>Medical Records</h3>
+                    <p>85</p>
+                    <p class="info-trend down">↓</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-aos="flip-left" data-aos-delay="500">
+                <div class="info-box text-center" style="background-color: #16a085;">
+                    <span class="info-icon"><i class="fas fa-smile"></i></span>
+                    <h3>Mental Wellbeing</h3>
+                    <p>90</p>
+                    <p class="info-trend up">↑</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-aos="flip-left" data-aos-delay="600">
+                <div class="info-box text-center" style="background-color: #2980b9;">
+                    <span class="info-icon"><i class="fas fa-dumbbell"></i></span>
+                    <h3>Exercise</h3>
+                    <p>95</p>
+                    <p class="info-trend up">↑</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgba(200,222,236);
+            color: #333;
+        }
+
+        .branding .container {
+            background-color: white;
+            max-width:1700px;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .branding {
+            padding: 10px 0;
+            margin-bottom: 20px;
+        
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #007bff;
+        }
+        .metric-box, .info-box {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px;
+            color: #fff;
+            position: relative;
+            transition: transform 0.3s;
+        }
+        .metric-box:hover, .info-box:hover {
+            transform: translateY(-10px);
+        }
+        .metric-icon, .info-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .metric-value {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .metric-label {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .general-report {
+            margin-bottom: 15px;
+        }
+        .general-report .bar {
+            height: 20px;
+            width:50%;
+            border-radius: 10px;
+            margin: 10px 10px;
+            align-content: center;
+        }
+        .general-report .label {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+        .bar-heartbeat { background-color: #e74c3c; width: 50%; }
+        .bar-blood-pressure { background-color: #2ecc71; width: 89%; }
+        .bar-sugar { background-color: #3498db; width: 60%; }
+        .bar-haemoglobin { background-color: #f39c12; width: 80%; }
+        .gauge {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 40px auto;
+            background: #333;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gauge .dial {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+            color: #fff;
+            top: 70px;
+        }
+
+        .gauge .value {
+            font-size: 32px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .gauge .indicator {
+            width: 2px;
+            height: 90px;
+            background: red;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform-origin: bottom;
+        }
+
+        .details {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .details p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .info-box h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .info-box p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .info-trend {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .info-trend.up {
+            color: #2ecc71;
+        }
+        .info-trend.down {
+            color: #e74c3c;
+        }
+    </style>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

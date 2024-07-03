@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Users Profile </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="passets/pcss/profile.css" rel="stylesheet">
+</head>
+
+<body>
+
+ 
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <div class="branding d-flex align-items-center">
+
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+          <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1 class="sitename">WellthCredit</h1>
+          </a> 
+  
+          <nav id="navmenu" class="navmenu">
+            
+            <ul>
+              <li><a href="index.html#hero" class="active">Home<br></a></li>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#services">Features</a></li>
+              
+              <li class="dropdown"><a href="index.html"><span>Dashboard
+              </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="users-profile.html">User profile</a></li>
+                  <li class="dropdown"><a href="#"><span>Our services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="loans.html">Personalized Loans</a></li>
+                      <li><a href="insurance.html">Insurance Plans</a></li>
+                      <li><a href="investments.html">Investment Opportunities</a></li>
+                      <li><a href="rewards.html">Rewards and Incentives</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="metrics.html">Health Metrics</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="index.html#contact">Contact Us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                  <i class="bi bi-bell"></i>
+                  <span class="badge bg-primary badge-number">4</span>
+                </a><!-- End Notification Icon -->
+          
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                  <li class="dropdown-header">
+                    You have 4 new notifications
+                    <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+          
+                  <li class="notification-item">
+                    <i class="bi bi-exclamation-circle text-warning"></i>
+                    <div>
+                      <p>Great news! You've earned a reward for maintaining your healthy hrbits. Visit your dashboard to see your new benefits. Keep striving for wellness</p>
+                      <p>30 min. ago</p>
+                    </div>
+                  </li>
+          
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+          
+                  <li class="notification-item">
+                    <i class="bi bi-x-circle text-danger"></i>
+                    <div>
+                      <p>You have a new personalized loan offer based on your health data. Check it out for lower interest rates and better terms. Your healthy lifestyle pays off!</p>
+                      <p>1 hr. ago</p>
+                    </div>
+                  </li>
+          
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+          
+                  <li class="notification-item">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <div>
+                      
+                      <p>Take a few minutes to relax and de-stress today, Practice deep breathing or meditation to improve your mental and physical health
+                      </p>
+                      <p>2 hrs. ago</p>
+                    </div>
+                  </li>
+          
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+          
+                  <li class="notification-item">
+                    <i class="bi bi-info-circle text-primary"></i>
+                    <div>
+                      <p>Your health improvements have lowered your insurance premiums. Enjoy the reduced costs and continue managing your health proactively. Wellness pays!</p>
+                      <p>4 hrs. ago</p>
+                    </div>
+                  </li>
+          
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="dropdown-footer">
+                    <a href="#">Show all notifications</a>
+                  </li>
+          
+                </ul><!-- End Notification Dropdown Items -->
+          
+              </li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+  
+        </div>
+  
+      </div>
+  
+    </div><!-- End Page Title -->
+
+    <section class="section profile">
+      <div class="row">
+        <div class="col-xl-4">
+
+          <div class="card">
+            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+
+              <img src="passets/pimg/profileimg.jpg" alt="Profile" class="rounded-circle">
+              <h2>Kevin Anderson</h2>
+              <!--<h3>Web Designer</h3>-->
+              <div class="social-links mt-2">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+
+        <div class="col-xl-8">
+
+          <div class="card">
+            <div class="card-body pt-3">
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
+
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Overview</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Edit Profile</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Settings</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Change Password</button>
+                </li>
+
+              </ul>
+              <div class="tab-content pt-2">
+
+                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                  <h5 class="card-title">About</h5>
+                  <p class="small fst-italic">Increasing daily steps, maintaining a balanced diet, and improving mental wellness Track progress with regular updates and achieve milestones for rewards.</p>
+
+                  <h5 class="card-title">Profile Details</h5>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                    <div class="col-lg-9 col-md-8">Kevin Anderson</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Date of birth</div>
+                    <div class="col-lg-9 col-md-8">13/4/2005</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Adress</div>
+                    <div class="col-lg-9 col-md-8">345,Sarju Appt,Mota varacha,Surat Gujarat,India</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Height</div>
+                    <div class="col-lg-9 col-md-8">170 cm</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Weight</div>
+                    <div class="col-lg-9 col-md-8">72 kg</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Email</div>
+                    <div class="col-lg-9 col-md-8">kevinanderson@gmail.com</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Mobile number</div>
+                    <div class="col-lg-9 col-md-8">6380852127</div>
+                  </div>
+
+                  <div class="bmi-section">
+                    <h3>Body Mass Index (BMI)</h3>
+                    <div class="bmi-value">24.9</div>
+                    <div class="bmi-status">You're Healthy</div>
+                    <div class="bmi-scale">
+                        <span>15</span><span>18.5</span><span>25</span><span>30</span><span>40</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade profile-edit pt-3" id="profile-edit">         
+                  <!-- Profile Edit Form -->
+                  <form>
+                    <div class="row mb-3">
+                      <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile Image</label>
+                      <div class="col-md-8 col-lg-9">
+                        <img src="passets/pimg/profileimg.jpg" alt="Profile">
+                        <div class="pt-2">
+                          <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
+                          <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Full Name</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="fullName" type="text" class="form-control" id="fullName" value="Kevin Anderson">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="about" class="col-md-4 col-lg-3 col-form-label">About</label>
+                      <div class="col-md-8 col-lg-9">
+                        <textarea name="about" class="form-control" id="about" style="height: 100px">Increasing daily steps, maintaining a balanced diet, and improving mental weliness. Track progress with regular updates and achieve milestones for rewards.</textarea>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="gender" class="col-md-4 col-lg-3 col-form-label">Gender</label>
+                      <div class="col-md-8 col-lg-9">
+                        <select name="gender" class="form-control" id="gender">
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                    </div>                    
+
+                    <div class="row mb-3">
+                      <label for="Dob" class="col-md-4 col-lg-3 col-form-label">DOB</label>
+                      <div class="col-md-8 col-lg-9">
+                          <input name="dob" type="date" class="form-control" id="Dob" placeholder="YYYY-MM-DD">
+                      </div>
+                    </div>
+                  
+
+                    <div class="row mb-3">
+                      <label for="Country" class="col-md-4 col-lg-3 col-form-label">Country</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="country" type="text" class="form-control" id="Country" value="India">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="address" type="text" class="form-control" id="Address" value="345,Sarju Appt,Mota varacha,Surat Gujarat,India">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Mobile</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="phone" type="text" class="form-control" id="Phone" value="6380852127">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="email" type="email" class="form-control" id="Email" value="k.anderson@example.com">
+                      </div>
+                    </div>
+                    
+
+                    <!--<div class="row mb-3">
+                      <label for="healthDocument" class="col-md-4 col-lg-3 col-form-label">Upload Health Document</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input type="file" name="healthDocument" class="form-control" id="healthDocument">
+                      </div>
+                    </div> -->  
+                    <!--<div class="row mb-3">
+                      <label for="healthDocument" class="col-md-4 col-lg-3 col-form-label">Upload Health Document</label>
+                      <div class="col-md-8 col-lg-9">
+                          <div class="upload-box">
+                              <input type="file" name="healthDocument" class="form-control" id="healthDocument">
+                          </div>
+                      </div>
+                    </div> -->
+                    <form id="uploadForm" method="post" enctype="multipart/form-data">
+                      <div class="row mb-3">
+                          <label for="healthDocument" class="col-md-4 col-lg-3 col-form-label">Upload Health Document</label>
+                          <div class="col-md-8 col-lg-9">
+                              <div class="upload-box">
+                                  <input type="file" name="healthDocument" class="form-control" id="healthDocument">
+                              </div>
+                          </div>
+                      </div>
+                      <button type="submit">Upload</button>
+                    </form>
+               
+                                    
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </div>
+                  </form><!-- End Profile Edit Form -->
+
+                </div>
+
+                <div class="tab-pane fade pt-3" id="profile-settings">
+
+                  <!-- Settings Form -->
+                  <form>
+
+                    <div class="row mb-3">
+                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Email Notifications</label>
+                      <div class="col-md-8 col-lg-9">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="changesMade" checked>
+                          <label class="form-check-label" for="changesMade">
+                            Changes made to your account
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="newProducts" checked>
+                          <label class="form-check-label" for="newProducts">
+                            Information on new products and services
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="proOffers">
+                          <label class="form-check-label" for="proOffers">
+                            Marketing and promo offers
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="securityNotify" checked disabled>
+                          <label class="form-check-label" for="securityNotify">
+                            Security alerts
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </div>
+                  </form><!-- End settings Form -->
+
+                </div>
+
+                <div class="tab-pane fade pt-3" id="profile-change-password">
+                  <!-- Change Password Form -->
+                  <form>
+
+                    <div class="row mb-3">
+                      <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="password" type="password" class="form-control" id="currentPassword">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="newpassword" type="password" class="form-control" id="newPassword">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter New Password</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="renewpassword" type="password" class="form-control" id="renewPassword">
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">Change Password</button>
+                    </div>
+                  </form><!-- End Change Password Form -->
+
+                </div>
+
+              </div><!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var uploadForm = document.getElementById('uploadForm'); // Corrected to target the form ID
+    
+        uploadForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var formData = new FormData();
+            formData.append('healthDocument', document.getElementById('healthDocument').files[0]);
+    
+            fetch('/upload', { // Adjust the endpoint as necessary
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                // Handle the response data here
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    });
+    </script>
+
+</body>
+
+</html>

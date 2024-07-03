@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    height: 100vh;
+    font-family: 'Comfortaa', cursive;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-slider, .content {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img-slider {
+    border-right: 2px solid #D6FAE7;
+}
+
+.img-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: ;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(150, 148, 148);
+}
+
+.content p a {
+    text-decoration: none;
+    color: #1FAB89;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border: none;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the form elements */
+}
+
+form label {
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #999c9a;
+    align-self: flex-start; /* Align labels to the start */
+}
+
+form input {
+    border: none;
+    border-bottom: 3px solid #005acf;
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px 0;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
+}
+
+form button {
+    text-align: center;
+    padding: 10px 60px;
+    color: #fff;
+    background-color: #1FAB89;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 20px;
+}
+
+form button.centered {
+    align-self: center;
+}
+
+form button {
+    align-self: center;
+}
+
+.other {
+    padding: 10px 0;
+}
+
+.other h3 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons img {
+    width: 15%;
+    margin: 5px 10px;
+}
+
+.display {
+    display: none;
+}
+
+.sign-img {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 800px;
+        height: 400px;
+        position: absolute;
+        top: 150px;
+        left: 120px;
+        border-radius: 20px;
+    }
+
+    .img-slider {
+        width: 300px;
+        height: 400px;
+    }
+
+    .container .img-slider img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-img {
+        margin-top: 40px;
+    }
+
+    .content {
+        position: absolute;
+        top: 10px;
+        right: 80px;
+    }
+
+    .content h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Lexend', sans-serif;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .content p {
+        text-align: center;
+        font-family: 'Lexend', sans-serif;
+        font-size: 1rem;
+        padding: 10px 0px;
+        color: rgb(150, 148, 148);
+    }
+
+    .content p a {
+        text-decoration: none;
+        color: #1FAB89;
+        font-weight: bolder;
+        font-size: 1.1rem;
+        border: none;
+    }
+
+    #signupForm, #signinForm {
+        padding-top: 20px;
+    }
+
+    #signupForm label, #signinForm label {
+        font-family: 'Comfortaa', cursive;
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 10px 0px;
+        color: #999c9a;
+    }
+
+    #signupForm input, #signinForm input {
+        border: none;
+        border-bottom: 3px solid #1FAB89;
+        width: 300px;
+        margin: 10px 0px;
+        outline: none;
+        font-size: 1rem;
+        padding: 5px 0px;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 800;
+    }
+
+    #btn, #btn1 {
+        text-align: center;
+        padding: 10px 40px;
+        color: #fff;
+        background-color: #1FAB89;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: 'Comfortaa', cursive;
+        align-self: center;
+    }
+
+    .other {
+        padding: 10px 0px;
+    }
+
+    .other h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons img {
+        width: 15%;
+        margin: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        width: 700px;
+        height: 350px;
+        position: absolute;
+        top: 150px;
+        left: 70px;
+        border-radius: 20px;
+    }
+
+    .img-slider {
+        width: 250px;
+        height: 350px;
+    }
+
+    .container .img-slider img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-img {
+        margin-top: 40px;
+    }
+
+    .content {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+
+    .content h2 {
+        text-align: center;
+        font-size: 1.6rem;
+        font-family: 'Lexend', sans-serif;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .content p {
+        text-align: center;
+        font-family: 'Lexend', sans-serif;
+        font-size: 0.9rem;
+        padding: 5px 0px;
+        color: rgb(150, 148, 148);
+    }
+
+    .content p a {
+        text-decoration: none;
+        color: #1FAB89;
+        font-weight: bolder;
+        font-size: 1.1rem;
+        border: none;
+    }
+
+    #signupForm, #signinForm {
+        padding-top: 10px;
+    }
+
+    #signupForm label, #signinForm label {
+        font-family: 'Comfortaa', cursive;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 8px 0px;
+        color: #999c9a;
+    }
+
+    #signupForm input, #signinForm input {
+        border: none;
+        border-bottom: 3px solid #1FAB89;
+        width: 240px;
+        margin: 5px 0px;
+        outline: none;
+        font-size: 1rem;
+        padding: 5px 0px;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 800;
+    }
+
+    #btn, #btn1 {
+        text-align: center;
+        padding: 8px 40px;
+        color: #fff;
+        background-color: #1FAB89;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: 'Comfortaa', cursive;
+        align-self: center;
+    }
+
+    .other {
+        padding: 10px 0px;
+    }
+
+    .other h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons img {
+        width: 15%;
+        margin: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        width: 500px;
+        height: 350px;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        border-radius: 20px;
+    }
+
+    .img-slider {
+        width: 200px;
+        height: 350px;
+    }
+
+    .container .img-slider img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-img {
+        margin-top: 20px;
+    }
+
+    .content {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .content h2 {
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: 'Lexend', sans-serif;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .content p {
+        text-align: center;
+        font-family: 'Lexend', sans-serif;
+        font-size: 0.7rem;
+        padding: 5px 0px;
+        color: rgb(150, 148, 148);
+    }
+
+    .content p a {
+        text-decoration: none;
+        color: #1FAB89;
+        font-weight: bolder;
+        font-size: 0.9rem;
+        border: none;
+    }
+
+    #signupForm, #signinForm {
+        padding-top: 10px;
+    }
+
+    #signupForm label, #signinForm label {
+        font-family: 'Comfortaa', cursive;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 5px 0px;
+        color: #999c9a;
+    }
+
+    #signupForm input, #signinForm input {
+        border: none;
+        border-bottom: 3px solid #1FAB89;
+        width: 160px;
+        margin: 5px 0px;
+        outline: none;
+        font-size: 1rem;
+        padding: 5px 0px;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 800;
+    }
+
+    #btn, #btn1 {
+        text-align: center;
+        padding: 5px 20px;
+        color: #fff;
+        background-color: #1FAB89;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: 'Comfortaa', cursive;
+        align-self: center;
+    }
+
+    .other {
+        padding: 10px 0px;
+    }
+
+    .other h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons img {
+        width: 15%;
+        margin: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .container {
+        width: 400px;
+        height: 350px;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        border-radius: 20px;
+    }
+
+    .img-slider {
+        width: 150px;
+        height: 350px;
+    }
+
+    .container .img-slider img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-img {
+        margin-top: 10px;
+    }
+
+    .content {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+
+    .content h2 {
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: 'Lexend', sans-serif;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .content p {
+        text-align: center;
+        font-family: 'Lexend', sans-serif;
+        font-size: 0.7rem;
+        padding: 5px 0px;
+        color: rgb(150, 148, 148);
+    }
+
+    .content p a {
+        text-decoration: none;
+        color: #1FAB89;
+        font-weight: bolder;
+        font-size: 0.9rem;
+        border: none;
+    }
+
+    #signupForm, #signinForm {
+        padding-top: 10px;
+    }
+
+    #signupForm label, #signinForm label {
+        font-family: 'Comfortaa', cursive;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 5px 0px;
+        color: #999c9a;
+    }
+
+    #signupForm input, #signinForm input {
+        border: none;
+        border-bottom: 3px solid #1FAB89;
+        width: 160px;
+        margin: 5px 0px;
+        outline: none;
+        font-size: 1rem;
+        padding: 5px 0px;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 800;
+    }
+
+    #btn, #btn1 {
+        text-align: center;
+        padding: 5px 20px;
+        color: #fff;
+        background-color: #1FAB89;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: 'Comfortaa', cursive;
+        align-self: center;
+    }
+
+    .other {
+        padding: 10px 0px;
+    }
+
+    .other h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons img {
+        width: 15%;
+        margin: 5px 10px;
+    }
+}

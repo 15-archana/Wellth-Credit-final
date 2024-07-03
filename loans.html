@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Metrics Dashboard</title>
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+
+        }
+
+        .branding .container {
+            background-color: white;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .branding {
+            padding: 10px 0;
+            margin-bottom: 20px;
+        
+        }
+
+        .main-content {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .container {
+            background-color: rgba(200,222,236);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 1800px;
+            width: calc(100% - 40px);
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: rgba(200,222,236);
+        }
+
+        .loan-selection {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .loan-selection div {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .loan-selection div:hover {
+            background-color: hsl(208, 78%, 45%);
+            transform: scale(1.07);
+        }
+
+        .loan-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .loan-form div {
+            flex: 1 1 calc(33% - 20px);
+            margin: 10px;
+        }
+
+        .loan-form input,
+        .loan-form select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .loan-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: hsl(208, 78%, 45%);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .loan-form button:hover {
+            background-color: hsl(208, 78%, 45%);
+            transform: scale(1.02);
+        }
+
+        .loan-plans {
+            margin-top: 20px;
+        }
+
+        .loan-plan {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .avail-button {
+            background-color: hsl(208, 78%, 45%);
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .avail-button:hover {
+            background-color: hsl(208, 78%, 45%);
+            transform: scale(1.12);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .loan-form div {
+                flex: 1 1 100%;
+            }
+
+            .loan-selection {
+                flex-direction: column;
+            }
+
+            .loan-selection div {
+                margin: 10px ;
+            }
+        }
+    </style>
+</head>    
+<body> 
+    <div class="branding d-flex align-items-center">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">WellthCredit</h1>
+            </a> 
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html#hero" class="active">Home<br></a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Features</a></li>
+                    <li class="dropdown"><a href="#"><span>Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="users-profile.html">User profile</a></li>
+                            <li class="dropdown"><a href="#"><span>Our services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="loans.html#">Personalized Loans</a></li>
+                                    <li><a href="insurance.html">Insurance Plans</a></li>
+                                    <li><a href="investments.html">Investment Opportunities</a></li>
+                                    <li><a href="rewards.html">Rewards and Incentives</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="metrics.html">Health Metrics</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="header">
+                <h1>Unlock Your Financial Potential Today!</h1>
+            </div>
+            <div class="loan-selection">
+                <div onclick="showBusinessLoans()">Business Loan</div>
+                <div onclick="showPersonalLoans()">Personal Loan</div>
+            </div>
+            <div class="loan-form">
+                <div>
+                    <label for="loan-amount">Loan amount</label>
+                    <input type="number" id="loan-amount" placeholder="Enter amount">
+                </div>
+                <div>
+                    <label for="interest-rate">Interest rate (%)</label>
+                    <select id="interest-rate">
+                        <option value="6">6%</option>
+                        <option value="8">8%</option>
+                        <option value="9">9%</option>
+                        <option value="10">10%</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="loan-terms">Loan Terms (year)</label>
+                    <select id="loan-terms">
+                        <option value="2">2 years</option>
+                        <option value="3">3 years</option>
+                        <option value="5">5 years</option>
+                        <option value="7">7 years</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Total Amount</label>
+                    <p id="total-amount">Rs. 2,25,901</p>
+                </div>
+                <div>
+                    <button onclick="calculateLoan()">GET</button>
+                </div>
+            </div>
+            <div class="loan-plans" id="business-loans">
+                <div class="loan-plan">
+                    <div>Active Life Loan</div>
+                    <div>10% | 2 years</div>
+                    <div>Rs. 4,614 / month</div>
+                    <button class="avail-button">AVAIL</button>
+                </div>
+                <div class="loan-plan">
+                    <div>Healthy Future Loan</div>
+                    <div>9% | 3 years</div>
+                    <div>Rs. 6,365 / month</div>
+                    <button class="avail-button">AVAIL</button>
+                </div>
+                <div class="loan-plan">
+                    <div>Wellness Boost Loan</div>
+                    <div>8% | 5 years</div>
+                    <div>Rs. 10,138 / month</div>
+                    <button class="avail-button">AVAIL</button>
+                </div>
+                <div class="loan-plan">
+                    <div>Healthy Lifestyle Loan</div>
+                    <div>6% | 7 years</div>
+                    <div>Rs. 15,153 / month</div>
+                    <button class="avail-button">AVAIL</button>
+                </div>
+            </div>
+            <div class="loan-plans hidden" id="personal-loans">
+                <div class="loan-plan">
+                    <div>Personal Care Loan</div>
+                    <div>7% | 1 year</div>
+                    <div>Rs. 9,000 / month</div>
+                    <button class="avail-button">AVAIL</button>
+                </div>
+                <div class="loan-plan">
+                    <div>Education Support Loan</div>
+                    <div>6% | 4 years</div>
+                    <div>Rs. 5,500 / month</div>
+                    <button class="avail-button">AVAIL</button>
+                </div>
+                <div class="loan-plan">
+                    <div>Medical Emergency Loan</div>
+                    <div>8% | 3 years</div>
+                    <div>Rs. 7,200 / month</div>
+                    <button class="avail-button">AVAIL</button>
+                </div>
+                <div class="loan-plan">
+                    <div>Home Renovation Loan</div>
+                    <div>9% | 5 years</div>
+                    <div>Rs. 4,800 / month</div>
+                    <button class="avail-button">AVAIL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateLoan() {
+            var amount = document.getElementById('loan-amount').value;
+            var interestRate = document.getElementById('interest-rate').value;
+            var loanTerm = document.getElementById('loan-terms').value;
+
+            var totalAmount = (amount * (1 + (interestRate / 100) * loanTerm)).toFixed(2);
+            document.getElementById('total-amount').innerText = 'Rs. ' + totalAmount;
+        }
+
+        function showBusinessLoans() {
+            document.getElementById('business-loans').classList.remove('hidden');
+            document.getElementById('personal-loans').classList.add('hidden');
+        }
+
+        function showPersonalLoans() {
+            document.getElementById('business-loans').classList.add('hidden');
+            document.getElementById('personal-loans').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
